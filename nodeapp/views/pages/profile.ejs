@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="/" method="POST" encType="multipart/form-data">
+                <h3>Upload Profile Photo</h3>
+                <input type="file" name="file1" accept="img/*" />
+                <input type="submit" class="btn btn-primary">
+            
+            </form>
+            <div class="card">
+                
+                
+                <img class="card_image" src="/img/photo_2022-05-09_19-41-48.jpg" alt="User Profile">
+                <h1 class="card_title">Meti</h1>
+                <div class="card_job">student</div>
+                <p class="card_about">
+                   i am a software engineer
+                </p>
+                <button type="button" class="btn btn-primary">View Profile</button>
+            
+            
+            </div>
+        </div>
+        <%- include('../templates/footer'); -%>    
+    </body>
+</html>
